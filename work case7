@@ -32,5 +32,7 @@ Cron підтримує як стандартні числові значенн�
 Для запуску в конкретний час (08:00): OnCalendar=*-*-* 08:00:00             Для будніх днів (Пн-Пт): OnCalendar=Mon..Fri *-*-* 08:00:00                   Для запуску після завантаження системи: OnBootSec=5min (виконати через 5 хвилин після старту).
 Чому це краще за Cron? На мою думку, головна перевага це прозорість. Через команду systemctl list-timers можна чітко побачити, коли задача виконувалася востаннє і коли буде наступна. Крім того, всі помилки скриптів одразу видно в системному журналі (journalctl), що значно полегшує пошук проблем.
 
-Висновки
-В ході вивчення теми я розібралася з логікою автоматизації процесів у Linux. Хоча Cron залишається класикою завдяки своїй простоті, Systemd-timers виглядають як більш професійний інструмент для адміністрування, оскільки дають більше контролю над завданнями. Всі теоретичні сценарії планування були розібрані та оформлені відповідно до стандартів синтаксису ОС Linux.
+Conclusion
+In the course of studying this topic, I have gained a solid understanding of the logic behind process automation in Linux. While Cron remains a classic due to its simplicity and straightforwardness, Systemd-timers appear to be a more professional tool for system administration, offering significantly more control over task execution. I have analyzed and documented all theoretical scheduling scenarios, ensuring they align with the standard syntax and requirements of the Linux operating system.
+
+
